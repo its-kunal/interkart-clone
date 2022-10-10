@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #333;
+    font-family: 'Karla', sans-serif;
+    display: block;
+    width: 100vw;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    cursor: pointer;
+    float: left;
+    padding: 0px 10px;
+}
+
+.container {
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navBrand {
+    min-height: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.navLogo {
+    height: 70px;
+}
+
+
+
+.navListWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    list-style: none;
+    font-size: larger;
+}
+
+.navItem {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+.navItem:hover {
+    transition: border-radius 1s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid lightblue;
+}
+
+
+.navAction {
+    display: flex;
+
+}
+
+.btn {
+    background-color: rgb(203, 117, 21);
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0px 10px;
+}
+
+.btn:hover {
+    background-color: rgba(203, 117, 21, 0.9);
+}
+
+.togglerBtn {
+    display: none;
+}
+
+.iconBtn {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.iconBtn:hover {
+    transition: all 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* Responsive part */
+
+@media(min-width: 320px) {
+    .container {
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 740px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 960px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navList {
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1180px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
